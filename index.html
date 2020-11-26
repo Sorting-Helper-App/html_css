@@ -1,52 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset = "UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FullScreen Responsive Login Page</title>
-  <div class="topnav">
-    <p class="title">Waste Sorting Guide Version 1.0</p>
-    <p class="altTitle">Waste Sorting 1.0</p>
-    <a class="active" href="#home">Home</a>
-    <a class="nonEss" href="#">Sign In</a>
-    <a class="nonEss" href="#">Leaderboard</a>
-    <a class="nonEss" href="#">Contact</a>
-    <a href="#">About</a>
-  </div>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Waste Sorting Guide</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajaz/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootsrapcdn.com/bootsrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
-  <section>
-    <div class="imgBx">
-      <img src="img/sorting_waste.png" alt="Waste Sorting">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-text">Waste Sorting Guide 3.0</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-tarhet="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Logout</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Delete</a>
+        </li>
     </div>
-    <div class="contentBx">
-      <div class="formBx">
-        <h2>Login</h2>
-        <form>
-          <div class="inputBx">
-            <span>Username</span>
-            <input type="text" name="">
-          </div>
-          <div class="inputBx">
-            <span>Password</span>
-            <input type="password" name="">
-          </div>
-          <div class="remember">
-            <label><input type="checkbox" name=""> Remember Me</label>
-          </div>
-          <div class="inputBx">
-            <input type="submit" value="Sign in" name=''>
-          </div>
-          <div class="inputBx">
-            <p>Don't have an account? <a href="#">Sign up</a> or</p>
-            <div class="genUser">
-              <input type="submit" value="Continue without Login" name=''>
-            </div>
-          </div>
-        </form>
+  </div>
+</nav>
+
+<!--Main boxes-->
+<div class="row">
+  <div class="col-md-6">
+    <div class="desc-wrap">
+    <div class="descriptionBx">
+      <h1>Welcome to Binz!</h1>
+      <br><p>Do you ever spend time at the waste bins trying to figure out where things belong? This app was designed to help you! Based on how you answer questions about a specific object, this app will give you guidance on what bin to put certain objects in.</p><br><p>In this situation right now? click the start button! Want to learn more about the waste sorting process, check out the resources at <a href="#" style="color:#FFD447">this link.</a> Happy sorting!</p>
+    </div>
+  </div>
+  </div>
+  <div class="col-md-3">
+    <div class="user-wrap">
+    <div class="userBx">
+      <div class="card">
+        <div class="table-head">
+        <h4>Leader Board</h4>
+        </div>
+        <div class="table-contents">
+        <table>
+          <tr>
+            <th>Rank</th>
+            <th>User</th>
+            <th>Points</th>
+          </tr>
+          <tr>
+            <td>#1</td>
+            <td>Tony Stark</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>#2</td>
+            <td>Melon Usk</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>#3</td>
+            <td>Phillip Phillips</td>
+            <td>2</td>
+          </tr>
+        </table>
+      </div>
       </div>
     </div>
-  </section>
+  </div>
+  </div>
+  <div class="col-md-3">
+    <div class="user-wrap">
+    <div class="userBx">
+      <div class="card">
+        <h1>User Name</h1>
+        <p class="points">10 points</p>
+        <p class="label">thoughtful planet person</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+<div class="row">
+  <div class="col-md-9">
+    <div class="welcomeBx">
+      <button type="button" class="btn1">
+      <div class="start-message">Start sorting!
+      </div>
+      </button>
+    </div>
+  </div>
+</div>
 </body>
 </html>
